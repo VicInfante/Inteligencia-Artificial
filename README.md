@@ -49,4 +49,4 @@ Las principales herramientas y librerías utilizadas a lo largo de este curso in
 
 ## 📧 Contacto
 
-Para cualquier pregunta o comentario sobre el contenido de este repositorio, por favor contactar a [Tu Nombre] a través de [Tu Correo Electrónico o LinkedIn].
+Para cualquier pregunta o comentario sobre el contenido de este repositorio, por favor contactar a Victor Infante a través de infante.tovar.omar@gmail.com.
