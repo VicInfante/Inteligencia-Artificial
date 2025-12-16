@@ -1,0 +1,44 @@
+Práctica 1: Recortar Figuras
+Este proyecto implementa técnicas de Visión Artificial para la segmentación y aislamiento de objetos en una imagen digital. El objetivo principal es filtrar elementos basándose en sus propiedades cromáticas dentro de un espacio de color controlado.
+
+🧠 Funcionamiento del Código
+El script Recortar-Figuras.py procesa la imagen siguiendo una lógica de filtrado por umbrales:
+
+Lectura y Conversión: El programa carga una imagen llamada figura.png y la convierte del espacio de color BGR al espacio HSV (Hue, Saturation, Value). Esta conversión es fundamental para la IA y Visión Artificial, ya que el modelo HSV es más robusto ante variaciones de iluminación.
+
+Segmentación por Rangos: Se definen tuplas de límites bajos y altos para identificar colores específicos:
+
+Rojo: Se utilizan dos rangos (umbralBajoRojo1 a umbralAltoRojo2) para capturar el matiz rojo en ambos extremos del espectro.
+
+Verde, Azul y Amarillo: Se establecen rangos únicos que permiten aislar estas tonalidades con precisión.
+
+Generación de Máscaras: Utilizando cv.inRange(), el código crea imágenes binarias donde solo los píxeles que coinciden con el color buscado se mantienen visibles, permitiendo así "recortar" visualmente las figuras del fondo.
+
+🛠️ Tecnologías
+Lenguaje: Python.
+
+Librerías: * OpenCV (cv2) para el procesamiento de imágenes.
+
+NumPy para la manipulación de arreglos multidimensionales.
+
+🚀 Instrucciones
+Asegúrate de tener el archivo figura.png en el mismo directorio que el script.
+
+Ejecuta el código: python Recortar-Figuras.py.
+
+Se abrirán cuatro ventanas independientes mostrando las figuras filtradas por color.
+
+📸 Evidencias
+En esta sección se presentan los resultados obtenidos tras la ejecución del algoritmo de segmentación:
+
+🔴 Figuras Rojas
+
+
+🟢 Figuras Verdes
+(Inserta aquí la captura correspondiente a la ventana "Figuras Verdes")
+
+🔵 Figuras Azules
+(Inserta aquí la captura correspondiente a la ventana "Figuras Azules")
+
+🟡 Figuras Amarillas
+(Inserta aquí la captura correspondiente a la ventana "Figuras Amarillas")
