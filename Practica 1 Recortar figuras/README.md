@@ -36,11 +36,11 @@ En esta sección se presentan los resultados obtenidos tras la ejecución del al
 ![Captura de pantalla 2025-12-16 155627](https://github.com/user-attachments/assets/834dd999-b9d7-4221-88ed-8f711058aa58)
 
 🟢 Figuras Verdes
-(Inserta aquí la captura correspondiente a la ventana "Figuras Verdes")
+![Captura de pantalla 2025-12-16 155615](https://github.com/user-attachments/assets/319555f9-9e3a-4fbf-99ba-62c41432f346)
 
 🔵 Figuras Azules
-(Inserta aquí la captura correspondiente a la ventana "Figuras Azules")
+![Captura de pantalla 2025-12-16 155600](https://github.com/user-attachments/assets/78476bb7-e3d1-418f-bb5b-f7a77f53f786)
 
 🟡 Figuras Amarillas
+![Captura de pantalla 2025-12-16 155521](https://github.com/user-attachments/assets/ff55721f-b3ce-4ef9-8a2c-bc2847d7a212)
 
-(Inserta aquí la captura correspondiente a la ventana "Figuras Amarillas")
