@@ -28,11 +28,12 @@ Ejecuta el código: python Recortar-Figuras.py.
 
 Se abrirán cuatro ventanas independientes mostrando las figuras filtradas por color.
 
+
 📸 Evidencias
 En esta sección se presentan los resultados obtenidos tras la ejecución del algoritmo de segmentación:
 
 🔴 Figuras Rojas
-
+![Captura de pantalla 2025-12-16 155627](https://github.com/user-attachments/assets/834dd999-b9d7-4221-88ed-8f711058aa58)
 
 🟢 Figuras Verdes
 (Inserta aquí la captura correspondiente a la ventana "Figuras Verdes")
@@ -41,4 +42,5 @@ En esta sección se presentan los resultados obtenidos tras la ejecución del al
 (Inserta aquí la captura correspondiente a la ventana "Figuras Azules")
 
 🟡 Figuras Amarillas
+
 (Inserta aquí la captura correspondiente a la ventana "Figuras Amarillas")
