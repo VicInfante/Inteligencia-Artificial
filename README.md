@@ -2,51 +2,54 @@
 
 Bienvenido(a) al repositorio que alberga todas las prácticas y proyectos desarrollados como parte de la materia de **Inteligencia Artificial**.
 
-Este espacio está dedicado a la exploración y aplicación de diversos algoritmos, técnicas y librerías fundamentales en el campo de la IA.
+Este espacio está dedicado a la exploración y aplicación de diversos algoritmos, técnicas y librerías fundamentales en el campo de la IA, desde conceptos básicos de procesamiento de imágenes hasta la implementación de modelos avanzados de aprendizaje profundo.
 
 ---
 
 ## 📚 Contenido del Repositorio
 
-Este repositorio se estructura en dos secciones principales, reflejando el trabajo realizado en el curso:
+El repositorio está organizado en dos secciones principales, correspondientes al trabajo práctico y teórico realizado durante el curso:
 
-### 💡 Prácticas
+### 💡 Prácticas  
+Contiene ejercicios y laboratorios semanales que abordan conceptos específicos de IA, implementados progresivamente para consolidar el aprendizaje. Algunos ejemplos incluyen:
 
-Carpeta dedicada a los ejercicios y laboratorios semanales que cubren conceptos específicos de la IA. Aquí podrás encontrar implementaciones de:
+- **Procesamiento de Imágenes:** Manipulación básica, filtros y segmentación.  
+  *(Ej: Práctica 1 – Recorte de figuras, Práctica 2 – Detección con Haarcascades)*
+- **Visión por Computadora (CV):** Reconocimiento facial, detección de expresiones y aplicaciones de visión artificial.  
+  *(Ej: Práctica 3 – Reconocimiento Facial, Práctica 4 – Reconocimiento de Expresiones)*
+- **Aprendizaje Profundo (Deep Learning):** Entrenamiento y evaluación de Redes Neuronales Convolucionales (CNN).  
+  *(Ej: Práctica 5 – Entrenamiento de CNN)*
+- **Frameworks de CV/IA:** Uso de herramientas especializadas como MediaPipe para tareas avanzadas.  
+  *(Ej: Práctica 6 – Aplicaciones con MediaPipe)*
 
-* **Procesamiento de Imágenes:** Manipulación básica, filtros y segmentación.
-    * *(Ej. Practica 1: Recortar figuras, Practica 2: Haarcascades)*
-* **Visión por Computadora (CV):** Aplicaciones de reconocimiento y detección.
-    * *(Ej. Practica 3: Reconocimiento Facial, Practica 4: Reconocimiento de Expresiones)*
-* **Aprendizaje Profundo (Deep Learning):** Entrenamiento y uso de Redes Neuronales Convolucionales (CNN).
-    * *(Ej. Practica 5: CNN entrenamiento)*
-* **Frameworks de CV/IA:** Uso de herramientas especializadas para tareas avanzadas.
-    * *(Ej. Practica 6: MediaPipe)*
+### 🚀 Proyectos  
+Sección dedicada a implementaciones más complejas e integradoras, donde se aplican múltiples técnicas para resolver problemas del mundo real. Entre ellos destacan:
 
-### 🚀 Proyectos
-
-Sección que contiene los proyectos finales o implementaciones más complejas, donde se integran múltiples conceptos para resolver problemas específicos.
-
-* **Búsqueda y Algoritmos Heurísticos:** Implementación de estrategias de búsqueda informada.
-    * *(Ej. Proyecto 1: Algoritmo A asterisco ($\text{A}^*$))*
-* **Aplicaciones de Deep Learning:** Desarrollo de modelos de aprendizaje profundo para clasificación o detección.
-    * *(Ej. Proyecto 2: CNN)*
+- **Búsqueda y Algoritmos Heurísticos:** Implementación de estrategias de búsqueda informada como el algoritmo **A***.  
+  *(Ej: Proyecto 1 – Algoritmo A*)*
+- **Aplicaciones de Deep Learning:** Desarrollo de modelos de aprendizaje profundo para tareas de clasificación y detección.  
+  *(Ej: Proyecto 2 – Clasificación de imágenes con CNN)*
 
 ---
 
 ## 🛠 Tecnologías y Herramientas
 
-Las principales herramientas y librerías utilizadas a lo largo de este curso incluyen:
+A lo largo del curso se han utilizado las siguientes tecnologías y librerías:
 
 | Tecnología | Propósito |
 | :--- | :--- |
 | **Python** | Lenguaje principal de implementación. |
 | **OpenCV** | Librería para Visión por Computadora. |
-| **TensorFlow/Keras** | Frameworks de Deep Learning (para CNN). |
-| **MediaPipe** | Framework para el desarrollo de soluciones de IA aplicadas. |
+| **TensorFlow/Keras** | Frameworks para el desarrollo de modelos de Deep Learning. |
+| **MediaPipe** | Framework para soluciones de IA aplicada (gestos, rostros, posturas, etc.). |
 
 ---
 
 ## 📧 Contacto
 
-Para cualquier pregunta o comentario sobre el contenido de este repositorio, por favor contactar a Victor Infante a través de infante.tovar.omar@gmail.com.
+Para cualquier duda, sugerencia o comentario relacionado con el contenido de este repositorio, puedes contactarme a través de:
+
+**Victor Infante**  
+📧 infante.tovar.omar@gmail.com
+
+---
