@@ -49,9 +49,14 @@ python Recortar-Figuras.py
 ### Resultados de Segmentación
 
 #### Figuras Rojas
+![Captura de pantalla 2025-12-16 155627](https://github.com/user-attachments/assets/69459953-9a42-4b38-a192-6b45024017b3)
 
 #### Figuras Verdes
+![Captura de pantalla 2025-12-16 155615](https://github.com/user-attachments/assets/94bce00f-57f8-4220-9d55-ebc9cb9b3f65)
 
 #### Figuras Azules
+![Captura de pantalla 2025-12-16 155600](https://github.com/user-attachments/assets/a3173bd1-dfb2-49e0-a5b5-7cd76a7d0c46)
 
 #### Figuras Amarillas
+![Captura de pantalla 2025-12-16 155521](https://github.com/user-attachments/assets/9e8f7d28-ba78-4386-9c50-f649dd9f68df)
+
