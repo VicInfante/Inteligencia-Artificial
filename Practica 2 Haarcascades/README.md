@@ -1,26 +1,70 @@
-Práctica 2: Haarcascade
-Este proyecto implementa un sistema de detección de rostros en tiempo real utilizando el algoritmo de Viola-Jones y clasificadores Haar Cascades. Esta técnica es un pilar en la Visión Artificial para la identificación rápida de patrones en imágenes.
+# Práctica 2: Detección de Rostros con Haarcascade
 
-🧠 Funcionamiento del Código
-El script haarcascades.py realiza la detección facial siguiendo este flujo lógico:
-Carga del Clasificador: Se importa el archivo haarcascade_frontalface_alt.xml, el cual contiene un modelo pre-entrenado con miles de rasgos faciales positivos y negativos.
-Captura de Video: El programa accede a la cámara del equipo en tiempo real mediante la función cv.VideoCapture(0).
-Pre-procesamiento (Escala de Grises): Cada frame se convierte a blanco y negro para reducir la carga computacional, ya que el algoritmo Haar se basa en variaciones de intensidad lumínica y no en color.
-Detección Multiescala: Se utiliza la función detectMultiScale para localizar rostros de diferentes tamaños dentro del campo de visión.
-Visualización: Una vez detectado el rostro, el sistema obtiene las coordenadas $(x, y, w, h)$ y dibuja un rectángulo verde alrededor del área identificada.
+## 📌 Descripción
+Esta práctica implementa un sistema de detección de rostros en tiempo real utilizando el clasificador en cascada de Haar. El programa captura video desde la cámara web, detecta rostros en cada frame, los recorta, redimensiona y guarda automáticamente para crear un dataset de entrenamiento facial.
 
-🛠️ Tecnologías Utilizadas
-Lenguaje: Python.
-Librería Principal: OpenCV (cv2) para el procesamiento de video y visión artificial.
-Modelo de IA: Clasificador en cascada de Haar (haarcascade_frontalface_alt.xml).
+## 🎯 Objetivos
+- Implementar detección facial en tiempo real con clasificadores Haarcascade
+- Capturar y procesar video en streaming usando OpenCV
+- Crear un dataset de imágenes faciales para entrenamiento de modelos
+- Aprender a extraer y procesar ROI (Regiones de Interés)
+- Entender los parámetros de `detectMultiScale` para optimizar la detección
 
-🚀 Instrucciones de Ejecución
-Para correr este proyecto localmente, sigue estos pasos:
-Requisito de Archivos: Verifica que el archivo XML del clasificador esté en la misma carpeta que el script de Python.
-Instalación de Dependencias: pip install opencv-python
-Ejecución: python haarcascades.py
-Salida: Presiona la tecla 's' (o cierra la ventana) para finalizar la captura de video.
+## 🛠️ Tecnologías Utilizadas
+- **Lenguaje:** Python 3.x
+- **Librerías:** OpenCV (cv2), NumPy
+- **Clasificador:** haarcascade_frontalface_alt.xml (clasificador preentrenado)
+- **Hardware:** Cámara web
 
-📸 Evidencias
-A continuación, se adjuntan las pruebas de funcionamiento del detector de rostros:
-👤 Detección Facial en Tiempo Real
+## 🚀 Instalación y Ejecución
+
+1. **Instalar dependencias:**
+```bash
+pip install opencv-python numpy
+```
+
+2. **Descargar el clasificador Haarcascade:**
+   - Descargar `haarcascade_frontalface_alt.xml` desde el repositorio oficial de OpenCV
+   - Colocarlo en el mismo directorio que el script
+
+3. **Crear carpeta de almacenamiento:**
+```bash
+mkdir victor
+```
+
+4. **Ejecutar el programa:**
+```bash
+python haarcascades.py
+```
+
+5. **Controles durante la ejecución:**
+   - El programa inicia automáticamente la cámara web
+   - Presiona **ESC** (tecla 27) para salir
+   - Las imágenes se guardan automáticamente en la carpeta `victor/`
+
+## 📊 Metodología
+
+1. **Inicialización:**
+   - Carga del clasificador Haarcascade preentrenado
+   - Inicio de captura de video (cámara índice 0)
+
+2. **Procesamiento por frame:**
+   - Captura de frame desde la cámara
+   - Conversión a escala de grises (mejora el rendimiento del clasificador)
+   - Detección de rostros con `detectMultiScale(scaleFactor=1.3, minNeighbors=5)`
+
+3. **Extracción y procesamiento de rostros:**
+   - Para cada rostro detectado (coordenadas x, y, w, h):
+     - Extracción de la región facial (ROI)
+     - Redimensionamiento a 100x100 píxeles usando interpolación INTER_AREA
+     - Visualización en ventana separada
+
+4. **Almacenamiento automático:**
+   - Guarda una imagen por cada frame procesado
+   - Nomenclatura: `victor/victor{i}.jpg` (donde i es un contador incremental)
+   - Se guarda en cada iteración del bucle principal
+
+## 🖼️ Evidencias
+
+### Detección en tiempo real
+![Captura de pantalla 2025-12-16 163122](https://github.com/user-attachments/assets/25e18f52-c566-4513-bb79-3c6068ac09cc)
