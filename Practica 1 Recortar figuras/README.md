@@ -1,46 +1,57 @@
-Práctica 1: Recortar Figuras
-Este proyecto implementa técnicas de Visión Artificial para la segmentación y aislamiento de objetos en una imagen digital. El objetivo principal es filtrar elementos basándose en sus propiedades cromáticas dentro de un espacio de color controlado.
+# Práctica 1: Segmentación de Figuras por Color
 
-🧠 Funcionamiento del Código
-El script Recortar-Figuras.py procesa la imagen siguiendo una lógica de filtrado por umbrales:
+## 📌 Descripción
+Esta práctica implementa un sistema de segmentación de imágenes que utiliza el espacio de color HSV para identificar y aislar figuras geométricas según su color. El objetivo es demostrar técnicas básicas de procesamiento de imágenes y visión por computadora para la detección de objetos basada en color.
 
-Lectura y Conversión: El programa carga una imagen llamada figura.png y la convierte del espacio de color BGR al espacio HSV (Hue, Saturation, Value). Esta conversión es fundamental para la IA y Visión Artificial, ya que el modelo HSV es más robusto ante variaciones de iluminación.
+## 🎯 Objetivos
+- Aprender a utilizar el espacio de color HSV para segmentación de imágenes
+- Implementar máscaras de color para aislar objetos específicos
+- Desarrollar habilidades en procesamiento de imágenes con OpenCV
+- Entender la importancia de los umbrales en la detección de colores
 
-Segmentación por Rangos: Se definen tuplas de límites bajos y altos para identificar colores específicos:
+## 🛠️ Tecnologías Utilizadas
+- **Lenguaje:** Python 3.x
+- **Librerías:** OpenCV (cv2), NumPy
+- **Herramientas:** Visual Studio Code / Editor de texto
 
-Rojo: Se utilizan dos rangos (umbralBajoRojo1 a umbralAltoRojo2) para capturar el matiz rojo en ambos extremos del espectro.
+## 🚀 Instalación y Ejecución
 
-Verde, Azul y Amarillo: Se establecen rangos únicos que permiten aislar estas tonalidades con precisión.
+1. **Instalar dependencias:**
+```bash
+pip install opencv-python numpy
+```
 
-Generación de Máscaras: Utilizando cv.inRange(), el código crea imágenes binarias donde solo los píxeles que coinciden con el color buscado se mantienen visibles, permitiendo así "recortar" visualmente las figuras del fondo.
+2. **Colocar los archivos:**
+   - Asegúrate de tener `figura.png` en el mismo directorio que `Recortar-Figuras.py`
 
-🛠️ Tecnologías
-Lenguaje: Python.
+3. **Ejecutar el programa:**
+```bash
+python Recortar-Figuras.py
+```
 
-Librerías: * OpenCV (cv2) para el procesamiento de imágenes.
+4. **Interacción:**
+   - El programa mostrará 4 ventanas con las figuras segmentadas
+   - Presiona cualquier tecla para cerrar todas las ventanas
 
-NumPy para la manipulación de arreglos multidimensionales.
+## 📊 Metodología
 
-🚀 Instrucciones
-Asegúrate de tener el archivo figura.png en el mismo directorio que el script.
+1. **Conversión a espacio HSV:** La imagen BGR se convierte a HSV para mejor segmentación
+2. **Definición de umbrales:** Se establecen rangos específicos para cada color:
+   - Rojo: 0-10 y 170-180 (dos rangos por naturaleza circular)
+   - Verde: 35-80
+   - Azul: 100-130
+   - Amarillo: 20-30
+3. **Aplicación de máscaras:** Se crean máscaras binarias con `cv.inRange()`
+4. **Visualización:** Se muestran las 4 máscaras resultantes
 
-Ejecuta el código: python Recortar-Figuras.py.
+## 🖼️ Evidencias
 
-Se abrirán cuatro ventanas independientes mostrando las figuras filtradas por color.
+### Resultados de Segmentación
 
+#### Figuras Rojas
 
-📸 Evidencias
-En esta sección se presentan los resultados obtenidos tras la ejecución del algoritmo de segmentación:
+#### Figuras Verdes
 
-🔴 Figuras Rojas
-![Captura de pantalla 2025-12-16 155627](https://github.com/user-attachments/assets/834dd999-b9d7-4221-88ed-8f711058aa58)
+#### Figuras Azules
 
-🟢 Figuras Verdes
-![Captura de pantalla 2025-12-16 155615](https://github.com/user-attachments/assets/319555f9-9e3a-4fbf-99ba-62c41432f346)
-
-🔵 Figuras Azules
-![Captura de pantalla 2025-12-16 155600](https://github.com/user-attachments/assets/78476bb7-e3d1-418f-bb5b-f7a77f53f786)
-
-🟡 Figuras Amarillas
-![Captura de pantalla 2025-12-16 155521](https://github.com/user-attachments/assets/ff55721f-b3ce-4ef9-8a2c-bc2847d7a212)
-
+#### Figuras Amarillas
